@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d47a1"/>
+      <stop offset="100%" stop-color="#00a896"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#f7f4ed"/>
+  <rect x="70" y="70" width="1060" height="760" rx="42" fill="#fff"/>
+  <circle cx="150" cy="150" r="45" fill="url(#g)"/>
+  <text x="135" y="168" font-family="Arial" font-weight="900" font-size="48" fill="#fff">P</text>
+  <text x="220" y="155" font-family="Arial" font-weight="900" font-size="38" fill="#071c33">PIAR Research University</text>
+  <text x="120" y="310" font-family="Arial" font-weight="900" font-size="70" fill="#071c33">Research-first</text>
+  <text x="120" y="390" font-family="Arial" font-weight="900" font-size="70" fill="#0d47a1">WordPress theme</text>
+  <text x="120" y="465" font-family="Arial" font-size="30" fill="#44546a">SEO • UI/UX • Custom Post Types • Accessibility</text>
+  <rect x="120" y="540" width="220" height="64" rx="32" fill="#d4a017"/>
+  <text x="160" y="582" font-family="Arial" font-weight="800" font-size="24" fill="#111">Explore Research</text>
+  <rect x="760" y="230" width="260" height="360" rx="30" fill="#071c33"/>
+  <rect x="800" y="280" width="180" height="24" rx="12" fill="#d4a017"/>
+  <rect x="800" y="340" width="150" height="18" rx="9" fill="#ffffff" opacity=".75"/>
+  <rect x="800" y="390" width="120" height="18" rx="9" fill="#ffffff" opacity=".55"/>
+  <rect x="800" y="470" width="170" height="70" rx="18" fill="#00a896" opacity=".8"/>
+</svg>
