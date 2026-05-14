@@ -1,0 +1,160 @@
+/*
+Theme Name: PIAR Research University
+Theme URI: https://github.com/yourusername/piar-research-university
+Author: Younas Khan
+Author URI: https://github.com/yourusername
+Description: A portfolio-ready WordPress theme for a fictional prestigious Pakistani research university. Built to demonstrate WordPress development, research-oriented content architecture, technical SEO, accessibility, responsive UI/UX, and conversion-focused admissions UX.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GPLv2 or later
+Text Domain: piar-research-university
+Tags: education, university, research, accessibility-ready, custom-logo, featured-images, responsive-layout
+*/
+
+:root {
+  --navy: #071c33;
+  --blue: #0d47a1;
+  --teal: #00a896;
+  --gold: #d4a017;
+  --cream: #f7f4ed;
+  --slate: #44546a;
+  --white: #ffffff;
+  --shadow: 0 18px 45px rgba(7,28,51,.12);
+  --radius: 22px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--navy);
+  background: #fff;
+  line-height: 1.65;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; }
+.skip-link {
+  position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+}
+.skip-link:focus {
+  left: 16px; top: 16px; width: auto; height: auto; padding: 12px 18px; background: var(--gold); z-index: 999;
+}
+.container { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+.site-header {
+  position: sticky; top: 0; z-index: 50; backdrop-filter: blur(15px);
+  background: rgba(255,255,255,.92); border-bottom: 1px solid rgba(7,28,51,.08);
+}
+.navbar { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 24px; }
+.brand { display:flex; align-items:center; gap: 12px; font-weight: 850; letter-spacing:-.03em; font-size: 1.1rem; }
+.logo-mark {
+  width: 46px; height: 46px; border-radius: 14px;
+  display:grid; place-items:center; color:white; font-weight:900;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  box-shadow: var(--shadow);
+}
+.nav-links { display:flex; align-items:center; gap: 22px; color: var(--slate); font-weight: 650; font-size: .94rem; }
+.nav-links a:hover { color: var(--blue); }
+.btn {
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding: 13px 19px; border-radius: 999px; font-weight: 800;
+  background: var(--blue); color: white; box-shadow: 0 12px 28px rgba(13,71,161,.22);
+  border: 0; cursor: pointer;
+}
+.btn.secondary { background: white; color: var(--navy); border: 1px solid rgba(7,28,51,.14); box-shadow: none; }
+.btn.gold { background: var(--gold); color: #111; box-shadow: 0 12px 28px rgba(212,160,23,.23); }
+.hero {
+  position: relative; overflow: hidden; background:
+    radial-gradient(circle at 12% 15%, rgba(0,168,150,.16), transparent 28%),
+    radial-gradient(circle at 90% 5%, rgba(212,160,23,.20), transparent 25%),
+    linear-gradient(180deg, #fff 0%, var(--cream) 100%);
+}
+.hero-grid { display:grid; grid-template-columns: 1.05fr .95fr; gap: 54px; align-items:center; padding: 88px 0 72px; }
+.kicker {
+  display:inline-flex; align-items:center; gap:10px; padding:8px 14px; border-radius:999px;
+  background: rgba(13,71,161,.08); color: var(--blue); font-weight:850; font-size:.85rem;
+}
+h1, h2, h3 { line-height: 1.08; margin: 0; letter-spacing: -.04em; }
+h1 { font-size: clamp(2.55rem, 5vw, 5.7rem); margin-top: 22px; }
+h2 { font-size: clamp(2rem, 3.6vw, 3.75rem); }
+h3 { font-size: 1.35rem; }
+.lead { font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: var(--slate); max-width: 720px; margin: 24px 0 32px; }
+.hero-actions { display:flex; flex-wrap:wrap; gap: 14px; }
+.trust-row { display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; margin-top: 34px; }
+.trust-card {
+  background:white; border: 1px solid rgba(7,28,51,.08); border-radius: 18px; padding: 18px; box-shadow: var(--shadow);
+}
+.metric { font-size: 1.8rem; font-weight: 950; color: var(--blue); }
+.metric-label { color: var(--slate); font-weight:650; font-size:.9rem; }
+.hero-visual {
+  background: var(--navy); color: white; border-radius: 34px; padding: 26px; box-shadow: 0 32px 80px rgba(7,28,51,.25);
+  position:relative; overflow:hidden;
+}
+.hero-visual:before {
+  content:""; position:absolute; width:220px; height:220px; border-radius:50%; background: rgba(0,168,150,.28);
+  right:-70px; top:-70px;
+}
+.dashboard-card { position:relative; background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14); border-radius: 24px; padding: 24px; margin-bottom: 18px; }
+.dashboard-card p { color: rgba(255,255,255,.76); margin: 10px 0 0; }
+.progress { height: 12px; background: rgba(255,255,255,.14); border-radius: 999px; overflow:hidden; margin: 16px 0; }
+.progress span { display:block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--teal)); border-radius:inherit; }
+.section { padding: 84px 0; }
+.section.alt { background: var(--cream); }
+.section-head { display:flex; justify-content:space-between; gap:24px; align-items:end; margin-bottom: 34px; }
+.section-head p { color: var(--slate); max-width: 540px; margin: 0; }
+.cards { display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.card {
+  background: white; border: 1px solid rgba(7,28,51,.09); border-radius: var(--radius); padding: 28px;
+  box-shadow: 0 14px 34px rgba(7,28,51,.06);
+}
+.icon {
+  width: 48px; height:48px; display:grid; place-items:center; border-radius: 16px;
+  background: rgba(0,168,150,.12); color: var(--teal); font-weight: 900; margin-bottom: 18px;
+}
+.card p { color: var(--slate); }
+.research-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.feature-panel {
+  background: linear-gradient(135deg, var(--navy), #123d68); color:white; border-radius: 30px; padding: 34px; min-height: 360px;
+  display:flex; flex-direction:column; justify-content:flex-end; box-shadow: var(--shadow);
+}
+.feature-panel p { color: rgba(255,255,255,.78); }
+.research-list { display:grid; gap:16px; }
+.research-item { display:flex; gap:16px; align-items:flex-start; background:white; border-radius: 20px; padding: 20px; border:1px solid rgba(7,28,51,.08); }
+.badge { padding: 6px 10px; background: rgba(212,160,23,.16); color:#8a6408; border-radius:999px; font-size:.78rem; font-weight:850; white-space:nowrap; }
+.program-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:16px; }
+.program {
+  padding: 22px; background:white; border-radius:20px; border:1px solid rgba(7,28,51,.08);
+}
+.program strong { display:block; font-size:1.1rem; margin-bottom:8px; }
+.program span { color:var(--slate); font-size:.93rem; }
+.seo-strip {
+  background: var(--navy); color:white; border-radius: 30px; padding: 38px;
+  display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px;
+}
+.seo-strip div { border-left: 1px solid rgba(255,255,255,.18); padding-left: 22px; }
+.seo-strip span { color: var(--gold); font-weight: 950; font-size: 2rem; }
+.testimonial {
+  display:grid; grid-template-columns: .7fr 1.3fr; gap: 30px; align-items:center;
+  background:white; border-radius: 30px; padding: 34px; border: 1px solid rgba(7,28,51,.08); box-shadow: var(--shadow);
+}
+.avatar {
+  width: 180px; height:180px; border-radius: 50%; background: linear-gradient(135deg, var(--blue), var(--teal));
+  display:grid; place-items:center; color:white; font-size:3rem; font-weight:900;
+}
+.cta { background: linear-gradient(135deg, var(--blue), var(--teal)); color:white; border-radius: 36px; padding: 52px; text-align:center; }
+.cta p { color: rgba(255,255,255,.82); margin-inline:auto; max-width: 720px; }
+.site-footer { background: var(--navy); color:white; padding: 48px 0; }
+.footer-grid { display:grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 28px; }
+.site-footer a, .site-footer p { color: rgba(255,255,255,.72); }
+.mobile-toggle { display:none; }
+
+@media (max-width: 900px) {
+  .hero-grid, .research-grid, .testimonial, .footer-grid { grid-template-columns: 1fr; }
+  .cards, .program-grid, .seo-strip, .trust-row { grid-template-columns: 1fr; }
+  .nav-links { display:none; }
+  .mobile-toggle { display:inline-flex; }
+  .section-head { display:block; }
+  .hero-grid { padding-top: 52px; }
+}
